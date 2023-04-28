@@ -1,0 +1,61 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url(imgs/villa.jpeg) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 3.5rem;
+    color: #000;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    gap: 15px;
+}
+
+.container .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttons button {
+    font-size: 1.2rem;
+    background-color: #f50;
+    color: #fff;
+    padding: 5px 8px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translateY(0px);
+    box-shadow: 0px 4px 2px #f2020f;
+    transition: .3s;
+}
+
+.buttons button:active {
+    box-shadow: 0px 0px 2px;
+    transform: translateY(4px);
+}
+
+.buttons button:hover {
+    background-color: rgb(251, 179, 144);
+    color: #000;
+}
